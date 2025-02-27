@@ -5,9 +5,15 @@ You should know how to do this now! `Woohoo`
 ## Install MultiQC
 
 This software has been already installed in our shared ocean directory and it will work fine while you are in that specific direectory. However, for you to use this file from any directory in the HPC, we must first add it to the environment path and source it:
+```
+git clone https://github.com/MultiQC/MultiQC.git
+cd MultiQC
+pip install .
+```
+
 
 ```
-echo 'export PATH=/ocean/projects/agr250001p/shared/software/MultiQC:$PATH' >> ~/.bashrc
+echo 'export PATH=/ocean/projects/agr250001p/shared/software/MultiQC/multiqc:$PATH' >> ~/.bashrc
 source ~/.bashrc
 ```
 - Use `multiqc --help` to test the software
